@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "11B6B57A2948F8E100B8B552"
-               BuildableName = "HomeAssistant-Extensions-Matter.appex"
+               BuildableName = "SH-PRO-Extensions-Matter.appex"
                BlueprintName = "Extensions-Matter"
                ReferencedContainer = "container:HomeAssistant.xcodeproj">
             </BuildableReference>
@@ -30,7 +30,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B657A8E51CA646EB00121384"
-               BuildableName = "Home Assistant.app"
+               BuildableName = "SH-PRO.app"
                BlueprintName = "App"
                ReferencedContainer = "container:HomeAssistant.xcodeproj">
             </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B657A8E51CA646EB00121384"
-            BuildableName = "Home Assistant.app"
+            BuildableName = "SH-PRO.app"
             BlueprintName = "App"
             ReferencedContainer = "container:HomeAssistant.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B657A8E51CA646EB00121384"
-            BuildableName = "Home Assistant.app"
+            BuildableName = "SH-PRO.app"
             BlueprintName = "App"
             ReferencedContainer = "container:HomeAssistant.xcodeproj">
          </BuildableReference>

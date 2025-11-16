@@ -270,7 +270,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
   GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   GRDB.swift: a0ccf69e5d6dd631d9ae40d933eb624e790f5245
-  HAKit: ebb24f77533784b5bf6f2eb437a2c48aa2ac09bb
+  HAKit: e975b27c5be10bd2216cff9cbd30ce030a8cff9a
   Improv-iOS: 8973990c1b1f3e3aed7fc600c8efce95359cadd0
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -295,6 +295,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: ecb9bb2da577aba6b5772962c20be36ff4dda04a
+PODFILE CHECKSUM: b617c7c3e0b4ca1e52ae3054787cdbef1dc8f741
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

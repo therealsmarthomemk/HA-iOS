@@ -2,7 +2,7 @@ import Foundation
 import Shared
 
 enum AppIcon: String, CaseIterable {
-    case Release = "release"
+    case Release = "betaNew"
     case Beta = "beta"
     case Dev = "dev"
     case Black = "black"

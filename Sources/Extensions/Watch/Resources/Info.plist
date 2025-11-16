@@ -46,7 +46,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>$(BUNDLE_ID_PREFIX).HomeAssistant$(BUNDLE_ID_SUFFIX).watchkitapp</string>
+			<string>com.realsmarthome.shpro.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>

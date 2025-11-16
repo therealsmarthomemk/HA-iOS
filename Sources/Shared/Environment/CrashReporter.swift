@@ -18,7 +18,7 @@ public class CrashReporterImpl: CrashReporter {
             return
         }
 
-        guard AppConstants.BundleID.starts(with: "io.robbie.") else {
+        guard AppConstants.BundleID.starts(with: "com.realsmarthome.") else {
             return
         }
 

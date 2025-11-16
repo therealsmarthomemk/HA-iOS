@@ -116,19 +116,19 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "about.help_localize.title") }
     }
     public enum HomeAssistantOnFacebook {
-      /// Home Assistant on Facebook
+      /// SH-PRO on Facebook
       public static var title: String { return L10n.tr("Localizable", "about.home_assistant_on_facebook.title") }
     }
     public enum HomeAssistantOnTwitter {
-      /// Home Assistant on Twitter
+      /// SH-PRO on Twitter
       public static var title: String { return L10n.tr("Localizable", "about.home_assistant_on_twitter.title") }
     }
     public enum Logo {
-      /// Home Assistant Companion
+      /// SH-PRO Companion
       public static var appTitle: String { return L10n.tr("Localizable", "about.logo.app_title") }
       /// Awaken Your Home
       public static var tagline: String { return L10n.tr("Localizable", "about.logo.tagline") }
-      /// Home Assistant
+      /// SH-PRO
       public static var title: String { return L10n.tr("Localizable", "about.logo.title") }
     }
     public enum Review {
@@ -212,9 +212,9 @@ public enum L10n {
   public enum Alerts {
     public enum ActionAutomationEditor {
       public enum Unavailable {
-        /// To automatically create an automation for an Action please update your Home Assistant to at least version 2024.2
+        /// To automatically create an automation for an Action please update your SH-PRO to at least version 2024.2
         public static var body: String { return L10n.tr("Localizable", "alerts.action_automation_editor.unavailable.body") }
-        /// Please update Home Assistant
+        /// Please update SH-PRO
         public static var title: String { return L10n.tr("Localizable", "alerts.action_automation_editor.unavailable.title") }
       }
     }
@@ -838,27 +838,27 @@ public enum L10n {
       public enum FailedConnect {
         /// Check your connection and try again. If you are not at home make sure you have configured remote access.
         public static var subtitle: String { return L10n.tr("Localizable", "connection.error.failed_connect.subtitle") }
-        /// We couldn't connect to Home Assistant
+        /// We couldn't connect to SH-PRO
         public static var title: String { return L10n.tr("Localizable", "connection.error.failed_connect.title") }
         /// The app is currently connecting to
         public static var url: String { return L10n.tr("Localizable", "connection.error.failed_connect.url") }
         public enum Cloud {
-          /// Make sure your Home Assistant Cloud subscription is active and connected to your server, you can verify that at [Nabu Casa](https://account.nabucasa.com)
+          /// Make sure your SH-PRO Cloud subscription is active and connected to your server, you can verify that at [Nabu Casa](https://account.nabucasa.com)
           public static var title: String { return L10n.tr("Localizable", "connection.error.failed_connect.cloud.title") }
         }
         public enum CloudInactive {
-          /// You have disabled Home Assistant Cloud use in the app, if you need it for remote access please open companion app settings and enable it.
+          /// You have disabled SH-PRO Cloud use in the app, if you need it for remote access please open companion app settings and enable it.
           public static var title: String { return L10n.tr("Localizable", "connection.error.failed_connect.cloud_inactive.title") }
         }
       }
     }
     public enum Permission {
       public enum InternalUrl {
-        /// To access Home Assistant locally in a secure way, you need to grant the location permission ('Always').
+        /// To access SH-PRO locally in a secure way, you need to grant the location permission ('Always').
         public static var body1: String { return L10n.tr("Localizable", "connection.permission.internal_url.body1") }
-        /// This permission allows Home Assistant to detect the wireless network that you're connected to and establish a local connection.
+        /// This permission allows SH-PRO to detect the wireless network that you're connected to and establish a local connection.
         public static var body2: String { return L10n.tr("Localizable", "connection.permission.internal_url.body2") }
-        /// You are always in control if your location is shared with Home Assistant. You can change these settings in the companion app setting screen.
+        /// You are always in control if your location is shared with SH-PRO. You can change these settings in the companion app setting screen.
         public static var body3: String { return L10n.tr("Localizable", "connection.permission.internal_url.body3") }
         /// Configure local access
         public static var buttonConfigure: String { return L10n.tr("Localizable", "connection.permission.internal_url.button_configure") }
@@ -914,7 +914,7 @@ public enum L10n {
   }
 
   public enum DeviceName {
-    /// This is used to identify your device in your Home Assistant.
+    /// This is used to identify your device in your SH-PRO.
     public static var subtitle: String { return L10n.tr("Localizable", "device_name.subtitle") }
     /// How would you like to name this device?
     public static var title: String { return L10n.tr("Localizable", "device_name.title") }
@@ -1043,7 +1043,7 @@ public enum L10n {
     public enum Category {
       /// App
       public static var app: String { return L10n.tr("Localizable", "gestures.category.app") }
-      /// Home Assistant
+      /// SH-PRO
       public static var homeAssistant: String { return L10n.tr("Localizable", "gestures.category.homeAssistant") }
       /// Other
       public static var other: String { return L10n.tr("Localizable", "gestures.category.other") }
@@ -1061,7 +1061,7 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "gestures.reset.title") }
     }
     public enum Screen {
-      /// Gestures below will be applied whenever you are using Home Assistant main UI.
+      /// Gestures below will be applied whenever you are using SH-PRO main UI.
       public static var body: String { return L10n.tr("Localizable", "gestures.screen.body") }
       /// Gestures
       public static var title: String { return L10n.tr("Localizable", "gestures.screen.title") }
@@ -1155,13 +1155,13 @@ public enum L10n {
     public enum ApiError {
       /// Cant build API URL
       public static var cantBuildUrl: String { return L10n.tr("Localizable", "ha_api.api_error.cant_build_url") }
-      /// Received invalid response from Home Assistant
+      /// Received invalid response from SH-PRO
       public static var invalidResponse: String { return L10n.tr("Localizable", "ha_api.api_error.invalid_response") }
-      /// HA API Manager is unavailable
+      /// SH-PRO API Manager is unavailable
       public static var managerNotAvailable: String { return L10n.tr("Localizable", "ha_api.api_error.manager_not_available") }
-      /// The mobile_app component is not loaded. Please add it to your configuration, restart Home Assistant, and try again.
+      /// The mobile_app component is not loaded. Please add it to your configuration, restart SH-PRO, and try again.
       public static var mobileAppComponentNotLoaded: String { return L10n.tr("Localizable", "ha_api.api_error.mobile_app_component_not_loaded") }
-      /// Your Home Assistant version (%@) is too old, you must upgrade to at least version %@ to use the app.
+      /// Your SH-PRO version (%@) is too old, you must upgrade to at least version %@ to use the app.
       public static func mustUpgradeHomeAssistant(_ p1: Any, _ p2: Any) -> String {
         return L10n.tr("Localizable", "ha_api.api_error.must_upgrade_home_assistant", String(describing: p1), String(describing: p2))
       }
@@ -1401,7 +1401,7 @@ public enum L10n {
           /// iOS Actions
           public static var title: String { return L10n.tr("Localizable", "magic_item.item_type.action.list.title") }
           public enum Warning {
-            /// We will stop supporting iOS Actions in the future, please consider using Home Assistant scripts or scenes instead.
+            /// We will stop supporting iOS Actions in the future, please consider using SH-PRO scripts or scenes instead.
             public static var title: String { return L10n.tr("Localizable", "magic_item.item_type.action.list.warning.title") }
           }
         }
@@ -1544,7 +1544,7 @@ public enum L10n {
     public enum List {
       /// NFC tags written by the app will show a notification when you bring your device near them. Activating the notification will launch the app and fire an event.
       /// 
-      /// Tags will work on any device with Home Assistant installed which has hardware support to read them.
+      /// Tags will work on any device with SH-PRO installed which has hardware support to read them.
       public static var description: String { return L10n.tr("Localizable", "nfc.list.description") }
       /// Learn More
       public static var learnMore: String { return L10n.tr("Localizable", "nfc.list.learn_more") }
@@ -1563,7 +1563,7 @@ public enum L10n {
       public enum Error {
         /// Failed to read tag
         public static var genericFailure: String { return L10n.tr("Localizable", "nfc.read.error.generic_failure") }
-        /// NFC tag is not a Home Assistant tag
+        /// NFC tag is not a SH-PRO tag
         public static var notHomeAssistant: String { return L10n.tr("Localizable", "nfc.read.error.not_home_assistant") }
         /// NFC tag is invalid
         public static var tagInvalid: String { return L10n.tr("Localizable", "nfc.read.error.tag_invalid") }
@@ -1628,7 +1628,7 @@ public enum L10n {
     public enum Action {
       public enum Rows {
         public enum AuthenticationRequired {
-          /// When the user selects an action with this option, the system prompts the user to unlock the device. After unlocking, Home Assistant will be notified of the selected action.
+          /// When the user selects an action with this option, the system prompts the user to unlock the device. After unlocking, SH-PRO will be notified of the selected action.
           public static var footer: String { return L10n.tr("Localizable", "notifications_configurator.action.rows.authentication_required.footer") }
           /// Authentication Required
           public static var title: String { return L10n.tr("Localizable", "notifications_configurator.action.rows.authentication_required.title") }
@@ -1791,13 +1791,13 @@ public enum L10n {
       public static var acceptButton: String { return L10n.tr("Localizable", "onboarding.invitation.accept_button") }
       /// Other options
       public static var otherOptions: String { return L10n.tr("Localizable", "onboarding.invitation.other_options") }
-      /// Home Assistant Invite
+      /// SH-PRO Invite
       public static var title: String { return L10n.tr("Localizable", "onboarding.invitation.title") }
     }
     public enum ManualSetup {
       /// Connect
       public static var connect: String { return L10n.tr("Localizable", "onboarding.manual_setup.connect") }
-      /// The URL of your Home Assistant server. Make sure it includes the protocol and port.
+      /// The URL of your SH-Pro server. Make sure it includes the protocol and port.
       public static var description: String { return L10n.tr("Localizable", "onboarding.manual_setup.description") }
       /// Enter URL
       public static var title: String { return L10n.tr("Localizable", "onboarding.manual_setup.title") }
@@ -1828,18 +1828,18 @@ public enum L10n {
       public enum TextField {
         /// e.g. http://homeassistant.local:8123
         public static var placeholder: String { return L10n.tr("Localizable", "onboarding.manual_setup.text_field.placeholder") }
-        /// Your Home Assistant URL
+        /// Your SH-Pro URL
         public static var title: String { return L10n.tr("Localizable", "onboarding.manual_setup.text_field.title") }
       }
     }
     public enum Permission {
       public enum Location {
-        /// To identify if you are at home and connect locally to Home Assistant, Apple requires that we ask for your location permission.
+        /// To identify if you are at home and connect locally to SH-Pro, Apple requires that we ask for your location permission.
         public static var description: String { return L10n.tr("Localizable", "onboarding.permission.location.description") }
-        /// Your location won't be shared with your local Home Assistant server unless you select 'Allow & Share with Home Assistant'. You can choose to share later in companion app settings > sensors.
+        /// Your location won't be shared with your local SH-Pro server unless you select 'Allow & Share with SH-Pro'. You can choose to share later in companion app settings > sensors.
         public static var privacyNote: String { return L10n.tr("Localizable", "onboarding.permission.location.privacy_note") }
         public enum Buttons {
-          /// Allow & Share with Home Assistant
+          /// Allow & Share with SH-Pro
           public static var allowAndShare: String { return L10n.tr("Localizable", "onboarding.permission.location.buttons.allow_and_share") }
           /// Allow for App use only
           public static var allowForApp: String { return L10n.tr("Localizable", "onboarding.permission.location.buttons.allow_for_app") }
@@ -1848,11 +1848,11 @@ public enum L10n {
         }
         public enum Deny {
           public enum Alert {
-            /// If you are sure, please continue and tap 'Deny' on the next popup as well, in case you don't have a remote connection configured, the App will use your local connection configuration to access Home Assistant.
+            /// If you are sure, please continue and tap 'Deny' on the next popup as well, in case you don't have a remote connection configured, the App will use your local connection configuration to access SH-Pro.
             public static var body: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.body") }
             /// Information
             public static var header: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.header") }
-            /// Without location permission future versions of the App may deny access to your local Home Assistant server due to privacy concerns. If you are sure, please continue and tap 'Deny' on the next popup as well. By doing that we recommend you use your internal URL as external, since it is the only URL the app will try to access.
+            /// Without location permission future versions of the App may deny access to your local SH-Pro server due to privacy concerns. If you are sure, please continue and tap 'Deny' on the next popup as well. By doing that we recommend you use your internal URL as external, since it is the only URL the app will try to access.
             public static var message: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.message") }
             /// Are you sure?
             public static var title: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.title") }
@@ -1868,7 +1868,7 @@ public enum L10n {
       /// You can change this permission later in Settings
       public static var changeLaterNote: String { return L10n.tr("Localizable", "onboarding.permissions.change_later_note") }
       public enum Focus {
-        /// Allow whether you are in focus mode to be sent to Home Assistant
+        /// Allow whether you are in focus mode to be sent to SH-Pro
         public static var description: String { return L10n.tr("Localizable", "onboarding.permissions.focus.description") }
         /// Allow focus permission to create sensors for your focus status, also known as do-not-disturb.
         public static var grantDescription: String { return L10n.tr("Localizable", "onboarding.permissions.focus.grant_description") }
@@ -1898,7 +1898,7 @@ public enum L10n {
         }
       }
       public enum Motion {
-        /// Allow motion activity and pedometer data to be sent to Home Assistant
+        /// Allow motion activity and pedometer data to be sent to SH-Pro
         public static var description: String { return L10n.tr("Localizable", "onboarding.permissions.motion.description") }
         /// Allow motion permission to create sensors for motion and pedometer data.
         public static var grantDescription: String { return L10n.tr("Localizable", "onboarding.permissions.motion.grant_description") }
@@ -1914,7 +1914,7 @@ public enum L10n {
         }
       }
       public enum Notification {
-        /// Allow push notifications to be sent from your Home Assistant
+        /// Allow push notifications to be sent from your SH-Pro
         public static var description: String { return L10n.tr("Localizable", "onboarding.permissions.notification.description") }
         /// Allow notification permission to create a notify service for your device.
         public static var grantDescription: String { return L10n.tr("Localizable", "onboarding.permissions.notification.grant_description") }
@@ -1969,30 +1969,30 @@ public enum L10n {
       }
     }
     public enum Welcome {
-      /// Allows you to access your Home Assistant installation on the go. It runs locally in your home via a device like the Home Assistant Green or Raspberry Pi.
+      /// Allows you to access your SH-Pro installation on the go.
       public static var body: String { return L10n.tr("Localizable", "onboarding.welcome.body") }
-      /// Connect to my Home Assistant
+      /// Connect to my SH-Pro
       public static var continueButton: String { return L10n.tr("Localizable", "onboarding.welcome.continue_button") }
-      /// This app connects to your Home Assistant server and allows integrating data about you and your phone.
+      /// This app connects to your SH-Pro server and allows integrating data about you and your phone.
       /// 
-      /// Home Assistant is free and open source home automation software with a focus on local control and privacy.
+      /// SH-Pro is free and open source home automation software with a focus on local control and privacy.
       public static var description: String { return L10n.tr("Localizable", "onboarding.welcome.description") }
-      /// Get started with Home Assistant
+      /// Get started with SH-Pro
       public static var getStarted: String { return L10n.tr("Localizable", "onboarding.welcome.get_started") }
-      /// Home Assistant Companion App
+      /// SH-Pro App
       public static var header: String { return L10n.tr("Localizable", "onboarding.welcome.header") }
       /// Learn more
       public static var learnMore: String { return L10n.tr("Localizable", "onboarding.welcome.learn_more") }
-      /// Connect to my Home Assistant
+      /// Connect to my SH-Pro
       public static var primaryButton: String { return L10n.tr("Localizable", "onboarding.welcome.primary_button") }
       /// Getting started
       public static var secondaryButton: String { return L10n.tr("Localizable", "onboarding.welcome.secondary_button") }
-      /// Welcome to Home Assistant %@!
+      /// Welcome to SH-Pro %@!
       public static func title(_ p1: Any) -> String {
         return L10n.tr("Localizable", "onboarding.welcome.title", String(describing: p1))
       }
       public enum Logo {
-        /// Home Assistant logo
+        /// SH-Pro logo
         public static var accessibilityLabel: String { return L10n.tr("Localizable", "onboarding.welcome.logo.accessibility_label") }
       }
     }
@@ -2013,7 +2013,7 @@ public enum L10n {
       public enum Bluetooth {
         /// Skip
         public static var secondaryButton: String { return L10n.tr("Localizable", "permission.screen.bluetooth.secondary_button") }
-        /// The Home Assistant app can find devices using Bluetooth of this device. Allow Bluetooth access for the Home Assistant app.
+        /// The SH-Pro app can find devices using Bluetooth of this device. Allow Bluetooth access for the SH-Pro app.
         public static var subtitle: String { return L10n.tr("Localizable", "permission.screen.bluetooth.subtitle") }
         /// Search devices
         public static var title: String { return L10n.tr("Localizable", "permission.screen.bluetooth.title") }
@@ -2072,7 +2072,7 @@ public enum L10n {
       public static var header: String { return L10n.tr("Localizable", "settings.connection_section.header") }
       /// Invite someone to this server
       public static var inviteToServer: String { return L10n.tr("Localizable", "settings.connection_section.invite_to_server") }
-      /// Directly connect to the Home Assistant server for push notifications when on internal SSIDs.
+      /// Directly connect to the SH-Pro server for push notifications when on internal SSIDs.
       public static var localPushDescription: String { return L10n.tr("Localizable", "settings.connection_section.local_push_description") }
       /// Logged in as
       public static var loggedInAs: String { return L10n.tr("Localizable", "settings.connection_section.logged_in_as") }
@@ -2119,7 +2119,7 @@ public enum L10n {
         public static var title: String { return L10n.tr("Localizable", "settings.connection_section.external_base_url.title") }
       }
       public enum HomeAssistantCloud {
-        /// Home Assistant Cloud
+        /// SH-Pro Cloud
         public static var title: String { return L10n.tr("Localizable", "settings.connection_section.home_assistant_cloud.title") }
       }
       public enum InternalBaseUrl {
@@ -2249,7 +2249,7 @@ public enum L10n {
         public static var title: String { return L10n.tr("Localizable", "settings.debugging.shake_disclaimer_optional.title") }
       }
       public enum Thread {
-        /// Check what Thread credentials are inside Apple Keychain, you can also import in Home Assistant or delete from Keychain.
+        /// Check what Thread credentials are inside Apple Keychain, you can also import in SH-Pro or delete from Keychain.
         public static var footer: String { return L10n.tr("Localizable", "settings.debugging.thread.footer") }
       }
     }
@@ -2379,7 +2379,7 @@ public enum L10n {
     }
     public enum ResetSection {
       public enum ResetAlert {
-        /// Your settings will be reset and this device will be unregistered from push notifications as well as removed from your Home Assistant configuration.
+        /// Your settings will be reset and this device will be unregistered from push notifications as well as removed from your SH-Pro configuration.
         public static var message: String { return L10n.tr("Localizable", "settings.reset_section.reset_alert.message") }
         /// Resetting…
         public static var progressMessage: String { return L10n.tr("Localizable", "settings.reset_section.reset_alert.progress_message") }
@@ -2409,7 +2409,7 @@ public enum L10n {
       /// Status
       public static var header: String { return L10n.tr("Localizable", "settings.status_section.header") }
       public enum LocationNameRow {
-        /// My Home Assistant
+        /// My SH-Pro
         public static var placeholder: String { return L10n.tr("Localizable", "settings.status_section.location_name_row.placeholder") }
         /// Name
         public static var title: String { return L10n.tr("Localizable", "settings.status_section.location_name_row.title") }
@@ -2565,7 +2565,7 @@ public enum L10n {
           public static var fireOrange: String { return L10n.tr("Localizable", "settings_details.general.app_icon.enum.fire_orange") }
           /// Green
           public static var green: String { return L10n.tr("Localizable", "settings_details.general.app_icon.enum.green") }
-          /// Home Assistant Blue
+          /// SH-Pro Blue
           public static var haBlue: String { return L10n.tr("Localizable", "settings_details.general.app_icon.enum.ha_blue") }
           /// Old Beta
           public static var oldBeta: String { return L10n.tr("Localizable", "settings_details.general.app_icon.enum.old_beta") }
@@ -3008,7 +3008,7 @@ public enum L10n {
         public static var title: String { return L10n.tr("Localizable", "settings_details.privacy.alerts.title") }
       }
       public enum Analytics {
-        /// Allows collection of basic information about your device and interactions with the app. No user identifiable data is shared, including your Home Assistant URLs and tokens. You must restart the app for changes to this setting to take effect.
+        /// Allows collection of basic information about your device and interactions with the app. No user identifiable data is shared, including your SH-Pro URLs and tokens. You must restart the app for changes to this setting to take effect.
         public static var genericDescription: String { return L10n.tr("Localizable", "settings_details.privacy.analytics.generic_description") }
         /// Analytics
         public static var genericTitle: String { return L10n.tr("Localizable", "settings_details.privacy.analytics.generic_title") }
@@ -3061,7 +3061,7 @@ public enum L10n {
   }
 
   public enum SettingsSensors {
-    /// Decide which of your device sensors you want to share with Home Assistant.
+    /// Decide which of your device sensors you want to share with SH-Pro.
     public static var body: String { return L10n.tr("Localizable", "settings_sensors.body") }
     /// Disabled
     public static var disabledStateReplacement: String { return L10n.tr("Localizable", "settings_sensors.disabled_state_replacement") }
@@ -3159,7 +3159,7 @@ public enum L10n {
       public static var noCredentialAvailable: String { return L10n.tr("Localizable", "thread.credentials.no_credential_available") }
       /// Thread Credentials
       public static var screenTitle: String { return L10n.tr("Localizable", "thread.credentials.screen_title") }
-      /// Share credential with Home Assistant
+      /// Share credential with SH-Pro
       public static var shareCredentialsButtonTitle: String { return L10n.tr("Localizable", "thread.credentials.share_credentials_button_title") }
       public enum ShareCredentials {
         /// Make sure your are logged in with your iCloud account which is owner of a Home in Apple Home.
@@ -3219,7 +3219,7 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "thread.transter_to_apple.title") }
     }
     public enum TransterToHomeassistant {
-      /// Transfer to Home Assistant
+      /// Transfer to SH-Pro
       public static var title: String { return L10n.tr("Localizable", "thread.transter_to_homeassistant.title") }
     }
   }
@@ -4125,7 +4125,7 @@ public enum L10n {
 
   public enum WebView {
     public enum EmptyState {
-      /// Please check your connection or try again later. If Home Assistant is restarting it will reconnect after it is back online.
+      /// Please check your connection or try again later. If SH-Pro is restarting it will reconnect after it is back online.
       public static var body: String { return L10n.tr("Localizable", "web_view.empty_state.body") }
       /// Open App settings
       public static var openSettingsButton: String { return L10n.tr("Localizable", "web_view.empty_state.open_settings_button") }
@@ -4162,7 +4162,7 @@ public enum L10n {
       }
     }
     public enum Actions {
-      /// Perform Home Assistant actions.
+      /// Perform SH-PRO actions.
       public static var description: String { return L10n.tr("Localizable", "widgets.actions.description") }
       /// No Actions Configured
       public static var notConfigured: String { return L10n.tr("Localizable", "widgets.actions.not_configured") }
@@ -4189,7 +4189,7 @@ public enum L10n {
     }
     public enum Controls {
       public enum Assist {
-        /// Open Assist in Home Assistant app
+        /// Open Assist in SH-Pro app
         public static var description: String { return L10n.tr("Localizable", "widgets.controls.assist.description") }
         /// Assist
         public static var title: String { return L10n.tr("Localizable", "widgets.controls.assist.title") }
@@ -4314,9 +4314,9 @@ public enum L10n {
       }
     }
     public enum Details {
-      /// Display states using from Home Assistant in text
+      /// Display states using from SH-PRO in text
       public static var description: String { return L10n.tr("Localizable", "widgets.details.description") }
-      /// Display states using from Home Assistant in text. ATTENTION: User needs to be admin for templating access
+      /// Display states using from SH-PRO in text. ATTENTION: User needs to be admin for templating access
       public static var descriptionWithWarning: String { return L10n.tr("Localizable", "widgets.details.description_with_warning") }
       /// Details
       public static var title: String { return L10n.tr("Localizable", "widgets.details.title") }
@@ -4340,9 +4340,9 @@ public enum L10n {
       public static var placeholder: String { return L10n.tr("Localizable", "widgets.entity_state.placeholder") }
     }
     public enum Gauge {
-      /// Display numeric states from Home Assistant in a gauge
+      /// Display numeric states from SH-PRO in a gauge
       public static var description: String { return L10n.tr("Localizable", "widgets.gauge.description") }
-      /// Display numeric states from Home Assistant in a gauge. ATTENTION: User needs to be admin for templating access
+      /// Display numeric states from SH-PRO in a gauge. ATTENTION: User needs to be admin for templating access
       public static var descriptionWithWarning: String { return L10n.tr("Localizable", "widgets.gauge.description_with_warning") }
       /// Gauge
       public static var title: String { return L10n.tr("Localizable", "widgets.gauge.title") }
@@ -4380,7 +4380,7 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "widgets.open_entity.title") }
     }
     public enum OpenPage {
-      /// Open a frontend page in Home Assistant.
+      /// Open a frontend page in SH-Pro.
       public static var description: String { return L10n.tr("Localizable", "widgets.open_page.description") }
       /// No Pages Available
       public static var notConfigured: String { return L10n.tr("Localizable", "widgets.open_page.not_configured") }

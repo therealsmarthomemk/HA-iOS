@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "11DE9D8225B6103C0081C0ED"
-               BuildableName = "Home Assistant Launcher.app"
+               BuildableName = "SH-PRO Launcher.app"
                BlueprintName = "Launcher"
                ReferencedContainer = "container:HomeAssistant.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11DE9D8225B6103C0081C0ED"
-            BuildableName = "Home Assistant Launcher.app"
+            BuildableName = "SH-PRO Launcher.app"
             BlueprintName = "Launcher"
             ReferencedContainer = "container:HomeAssistant.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11DE9D8225B6103C0081C0ED"
-            BuildableName = "Home Assistant Launcher.app"
+            BuildableName = "SH-PRO Launcher.app"
             BlueprintName = "Launcher"
             ReferencedContainer = "container:HomeAssistant.xcodeproj">
          </BuildableReference>
