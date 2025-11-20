@@ -8,7 +8,6 @@ PODS:
     - UIColor_Hex_Swift (>= 3.0.0)
   - Communicator (4.1.0)
   - CPDAcknowledgements (1.0.0)
-  - EMTLoadingIndicator (4.0.0)
   - Eureka (5.4.0)
   - FirebaseCore (10.5.0):
     - FirebaseCoreInternal (~> 10.0)
@@ -128,7 +127,6 @@ DEPENDENCIES:
   - ColorPickerRow (from `https://github.com/EurekaCommunity/ColorPickerRow`, commit `fde095843bb8c08e8818097c51ed140373180790`)
   - Communicator (from `https://github.com/zacwest/Communicator.git`, branch `observation-memory-direct`)
   - CPDAcknowledgements (from `https://github.com/CocoaPods/CPDAcknowledgements`, branch `master`)
-  - EMTLoadingIndicator (from `https://github.com/hirokimu/EMTLoadingIndicator`, branch `master`)
   - Eureka (from `https://github.com/xmartlabs/Eureka`, branch `master`)
   - FirebaseMessaging
   - GRDB.swift (from `https://github.com/groue/GRDB.swift.git`, tag `v7.0.0`)
@@ -195,9 +193,6 @@ EXTERNAL SOURCES:
   CPDAcknowledgements:
     :branch: master
     :git: https://github.com/CocoaPods/CPDAcknowledgements
-  EMTLoadingIndicator:
-    :branch: master
-    :git: https://github.com/hirokimu/EMTLoadingIndicator
   Eureka:
     :branch: master
     :git: https://github.com/xmartlabs/Eureka
@@ -230,9 +225,6 @@ CHECKOUT OPTIONS:
   CPDAcknowledgements:
     :commit: 2f289a19c3ec41f835a9629fdbea4a89033f61a1
     :git: https://github.com/CocoaPods/CPDAcknowledgements
-  EMTLoadingIndicator:
-    :commit: ff5b4ccf9bb424cb454e76ee91e32165d2d9c12c
-    :git: https://github.com/hirokimu/EMTLoadingIndicator
   Eureka:
     :commit: ba4ebbcc4e368e901de666870fc2a4524474a4c7
     :git: https://github.com/xmartlabs/Eureka
@@ -261,7 +253,6 @@ SPEC CHECKSUMS:
   ColorPickerRow: 409acc262ca04283eb56f54e813e775d2e99741e
   Communicator: 027085fbfac0fbb02c8e045f5f409df0882e1630
   CPDAcknowledgements: 6e15e71849ba4ad5e8a17a0bb9d20938ad23bac8
-  EMTLoadingIndicator: 0d3256b0de3e6ba5ab17048acc7aa93af34e48d3
   Eureka: fadaa9fa3d6e402d3c60f78f24edf3d7bafc9c29
   FirebaseCore: 324b8d182d9ff7e3f6d1fa2f04b082d1c7a3e366
   FirebaseCoreInternal: e463f41bb935cd049505bf7e9a5bdd7dcea90df6
@@ -295,6 +286,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: b617c7c3e0b4ca1e52ae3054787cdbef1dc8f741
+PODFILE CHECKSUM: 9d6ffc6ca97b4cac232e0a95c7c2fc089c41cf8b
 
 COCOAPODS: 1.16.2

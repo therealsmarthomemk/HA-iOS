@@ -96,18 +96,6 @@ abstract_target 'iOS' do
   target 'Extensions-Widgets'
 end
 
-abstract_target 'watchOS' do
-  platform :watchos, '8.0'
-
-  target 'Shared-watchOS' do
-    shared_fwk_pods
-  end
-
-  target 'WatchExtension-Watch' do
-    pod 'EMTLoadingIndicator', git: 'https://github.com/hirokimu/EMTLoadingIndicator', branch: 'master'
-  end
-end
-
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|

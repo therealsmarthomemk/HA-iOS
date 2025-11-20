@@ -25,6 +25,8 @@ public enum Asset {
   public static let haCloudLogo = ImageAsset(name: "ha-cloud-logo")
   public static let improvLogo = ImageAsset(name: "improv-logo")
   public static let logoHorizontalText = ImageAsset(name: "logo-horizontal-text")
+  public static let logoInCircle = ImageAsset(name: "logo-in-circle")
+  public static let searchingServersDots = ImageAsset(name: "searching-servers-dots")
   public static let statusItemIcon = ImageAsset(name: "statusItemIcon")
   public static let thread = ImageAsset(name: "thread")
 }
