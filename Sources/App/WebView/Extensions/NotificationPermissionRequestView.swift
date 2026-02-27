@@ -25,7 +25,7 @@ struct NotificationPermissionRequestView: View {
                         }
                         .buttonStyle(.primaryButton)
                         Button {
-                            triggerNativePopup()
+                            dismiss()
                         } label: {
                             Text(L10n.Permission.Notification.secondaryButton)
                         }

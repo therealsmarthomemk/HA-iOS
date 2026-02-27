@@ -7292,7 +7292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${SRCROOT}/Tools/BuildMaterialDesignIconsFont.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/Tools/BuildMaterialDesignIconsFont.sh\"\n";
 		};
 		42E0D8A92DCCE6000095A245 /* Copy Intents Localizations */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -9767,16 +9767,16 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 99W8KYTVYN;
 				DISABLE_SWIFTLINT = 1;
-				ENV_URL_HANDLER = "homeassistant-beta";
+				ENV_URL_HANDLER = "shpro-beta";
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.04;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -9998,16 +9998,16 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 99W8KYTVYN;
 				DISABLE_SWIFTLINT = 1;
-				ENV_URL_HANDLER = "homeassistant-dev";
+				ENV_URL_HANDLER = "shpro-dev";
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.04;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -10049,16 +10049,16 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 99W8KYTVYN;
 				DISABLE_SWIFTLINT = 1;
-				ENV_URL_HANDLER = homeassistant;
+				ENV_URL_HANDLER = shpro;
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.04;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

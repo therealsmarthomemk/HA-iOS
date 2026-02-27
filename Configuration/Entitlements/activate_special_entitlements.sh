@@ -2,6 +2,11 @@
 
 ENTITLEMENTS_FILE="${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent"
 
+# Release/Archive builds must use production APNs for push notifications (TestFlight/App Store)
+if [[ $TARGET_NAME = "App" && $CONFIGURATION = "Release" && -f "$ENTITLEMENTS_FILE" ]]; then
+  /usr/libexec/PlistBuddy -c "Set :aps-environment production" "$ENTITLEMENTS_FILE"
+fi
+
 if [[ $CI && $CONFIGURATION != "Release" ]]; then
   echo "warning: Critical alerts disabled for CI"
 elif [[ ${ENABLE_CRITICAL_ALERTS} -eq 1 ]]; then
