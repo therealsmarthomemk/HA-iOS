@@ -8,6 +8,8 @@ lane :icons do
           appicon_name: 'AppIcon.beta.appiconset', appicon_devices: %i[ipad iphone ios_marketing macos])
   appicon(appicon_path: 'Sources/App/Resources/Assets.xcassets', appicon_image_file: 'icons/release.png',
           appicon_devices: %i[ipad iphone ios_marketing macos])
+  # Keep Debug (AppIcon.dev) same as Release so app and push notification icon match for both builds
+  sh('cd Sources/App/Resources/Assets.xcassets && cp AppIcon.appiconset/Contents.json AppIcon.dev.appiconset/ && for f in AppIcon.appiconset/*.png; do cp "$f" AppIcon.dev.appiconset/; done')
 
   appicon(appicon_path: 'WatchApp/Assets.xcassets', appicon_image_file: 'icons/dev.png',
           appicon_name: 'WatchIcon.dev.appiconset', appicon_devices: %i[watch watch_marketing])

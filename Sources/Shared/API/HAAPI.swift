@@ -471,11 +471,13 @@ public class HomeAssistantAPI {
         return json
     }
 
+    private static let pushNotificationURL = "https://notifications.therealsmarthome.uk/notify"
+
     private func mobileAppRegistrationRequestModel() -> MobileAppRegistrationRequest {
         with(MobileAppRegistrationRequest()) {
             if let pushID = Current.settingsStore.pushID {
                 $0.AppData = [
-                    "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification",
+                    "push_url": Self.pushNotificationURL,
                     "push_token": pushID,
                 ]
             }

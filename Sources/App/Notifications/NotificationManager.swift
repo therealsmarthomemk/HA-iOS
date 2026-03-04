@@ -58,15 +58,34 @@ class NotificationManager: NSObject, LocalPushManagerDelegate {
 
         Messaging.messaging().delegate = self
         Messaging.messaging().isAutoInitEnabled = Current.settingsStore.privacy.messaging
+
+        requestNotificationPermissionIfNeeded()
+    }
+
+    /// Request notification permission if not yet determined, so the system prompt is shown and we can receive push.
+    private func requestNotificationPermissionIfNeeded() {
+        guard !Current.isCatalyst else { return }
+        UNUserNotificationCenter.current().getNotificationSettings { [weak self] settings in
+            DispatchQueue.main.async {
+                guard settings.authorizationStatus == .notDetermined else { return }
+                UNUserNotificationCenter.current().requestAuthorization(options: .defaultOptions) { _, _ in
+                    DispatchQueue.main.async {
+                        UIApplication.shared.registerForRemoteNotifications()
+                    }
+                }
+            }
+        }
     }
 
     func didFailToRegisterForRemoteNotifications(error: Error) {
         Current.Log.error("failed to register for remote notifications: \(error)")
+        print("[SH-Pro Push] Failed to register for remote notifications: \(error.localizedDescription)")
     }
 
     func didRegisterForRemoteNotifications(deviceToken: Data) {
         let apnsToken = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
         Current.Log.verbose("Successfully registered for push notifications! APNS token: \(apnsToken)")
+        print("[SH-Pro Push] APNS device token: \(apnsToken)")
         Current.crashReporter.setUserProperty(value: apnsToken, name: "APNS Token")
 
         var tokenType: MessagingAPNSTokenType = .prod
@@ -331,6 +350,9 @@ extension NotificationManager: MessagingDelegate {
         let loggableCurrent = Current.settingsStore.pushID ?? "(null)"
         let loggableNew = fcmToken ?? "(null)"
 
+        if let token = fcmToken {
+            print("[SH-Pro Push] FCM push token (use this for testing): \(token)")
+        }
         Current.Log.info("Firebase registration token refreshed, new token: \(loggableNew)")
 
         if loggableCurrent != loggableNew {

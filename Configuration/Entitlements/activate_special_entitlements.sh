@@ -2,8 +2,13 @@
 
 ENTITLEMENTS_FILE="${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent"
 
+# Skip if entitlements file not yet created (avoids install issues on some Xcode versions)
+if [[ ! -f "$ENTITLEMENTS_FILE" ]]; then
+  exit 0
+fi
+
 # Release/Archive builds must use production APNs for push notifications (TestFlight/App Store)
-if [[ $TARGET_NAME = "App" && $CONFIGURATION = "Release" && -f "$ENTITLEMENTS_FILE" ]]; then
+if [[ $TARGET_NAME = "App" && $CONFIGURATION = "Release" ]]; then
   /usr/libexec/PlistBuddy -c "Set :aps-environment production" "$ENTITLEMENTS_FILE"
 fi
 
